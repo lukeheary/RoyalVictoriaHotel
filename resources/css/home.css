@@ -95,7 +95,7 @@
     margin-top: 49.5vh;
   }
   #leftSide:hover {
-     box-shadow: 2px 1px 1px #36A2FF;
+     box-shadow: 2px 1px 1px #1E1E1E;
   }
   #leftArrow {
     transform: rotate(-90deg);
@@ -114,7 +114,7 @@
     margin-top: 44vh;
   }
   #rightSide:hover {
-     box-shadow: -2px 1px 1px #FF4836;
+     box-shadow: -2px 1px 1px #A0A0A0;
   }
   #rightArrow {
     transform: rotate(90deg);
@@ -139,19 +139,29 @@
     position: fixed;
     z-index: 15;
     top: 0;
-    left: 0;
-    background-color: rgba(0,0,0, .9);
     overflow-x: hidden;
     transition: 0.5s;
 }
 
+  #leftMenu {
+    left: 0;
+    background: -webkit-linear-gradient(left , #000000, rgba(0, 0, 0, 0.7) );
+    text-align: left;
+    margin-left: 45px;
+  }
+
+  #rightMenu {
+    right: 0;
+    background: -webkit-linear-gradient(right , #ACACAC, rgba(172, 172, 172, 0.7) );
+    text-align: right;
+    margin-right: 45px;
+  }
+
 .overlay-content {
     position: relative;
-    top: 25%;
+    top: 15vh;
     width: 100%;
-    text-align: left;
-    margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .overlay a {
@@ -175,14 +185,14 @@
 }
 
 .overlay a:hover, .overlay a:focus, .overlay a p:hover {
-    color: #ACACAC;
+    color: #909090;
 }
 
-.overlay .closebtn {
+.overlay .closebtn #leftMenu {
     position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+    top: 30px;
+    right: 30px;
+    font-size: 30px;
 }
 
 @media screen and (max-height: 450px) {

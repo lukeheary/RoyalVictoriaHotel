@@ -35,11 +35,18 @@
   </script>
 
   <script>
-function openNav() {
-    document.getElementById("myNav").style.width = "20%";
+function openLeftMenu() {
+    document.getElementById("leftMenu").style.width = "20%";
 }
-function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
+function closeLeftMenu() {
+    document.getElementById("leftMenu").style.width = "0%";
+}
+
+function openRightMenu() {
+    document.getElementById("rightMenu").style.width = "20%";
+}
+function closeRightMenu() {
+    document.getElementById("rightMenu").style.width = "0%";
 }
 </script>
 
@@ -51,32 +58,50 @@ function closeNav() {
 
   <body>
 
-  <div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-    <a href="#">Hotel</a>
-    <a href="#">Bedrooms</a>
-    <a href="#"><p>Single</p></a>
-    <a href="#"><p>King</p></a>
-    <a href="#"><p>Suite</p></a>
+  <div id="leftMenu" class="overlay" onclick="closeLeftMenu()">>
+    <div class="overlay-content">
+      <a href="#">Hotel</a>
+      <a href="#">Bedrooms</a>
+      <a href="#"><p>Single</p></a>
+      <a href="#"><p>King</p></a>
+      <a href="#"><p>Suite</p></a>
 
 
-    <a href="#">Eat & Drink</a>
-    <a href="#"><p>Snack Bar</p></a>
-    <a href="#"><p>Café</p></a>
+      <a href="#">Eat & Drink</a>
+      <a href="#"><p>Snack Bar</p></a>
+      <a href="#"><p>Café</p></a>
 
-    <a href="#">Event</a>
-    <a href="#"><p>Private Dining</p></a>
-    <a href="#"><p>Weddings</p></a>
+      <a href="#">Event</a>
+      <a href="#"><p>Private Dining</p></a>
+      <a href="#"><p>Weddings</p></a>
+    </div>
   </div>
-</div>
 
-  <a href="#" class="sideButton" id = "leftSide" onclick="openNav()">
+  <div id="rightMenu" class="overlay" onclick="closeRightMenu()">
+    <div class="overlay-content">
+      <a href="#">Hotel</a>
+      <a href="#">Bedrooms</a>
+      <a href="#"><p>Single</p></a>
+      <a href="#"><p>King</p></a>
+      <a href="#"><p>Suite</p></a>
+
+
+      <a href="#">Eat & Drink</a>
+      <a href="#"><p>Snack Bar</p></a>
+      <a href="#"><p>Café</p></a>
+
+      <a href="#">Event</a>
+      <a href="#"><p>Private Dining</p></a>
+      <a href="#"><p>Weddings</p></a>
+    </div>
+  </div>
+
+  <a class="sideButton" id = "leftSide" onclick="openLeftMenu()">
     <div class = "arrow" id = "leftArrow">
     </div>
     <p>the property</p></a>
 
-  <a href="#" class="sideButton" id = "rightSide">
+  <a class="sideButton" id = "rightSide" onclick="openRightMenu()">
     <div class = "arrow" id = "rightArrow">
     </div>
     <p>the investment</p>
