@@ -5,22 +5,55 @@
      padding: 0px;
   }
 
+  @font-face {
+    font-family: royalcrescent;
+    src: url("./fonts/royal_crescent/royalcrescent.otf") format("opentype");
+  }
+
   body {
     font-family: Helvetica;
     background: -webkit-linear-gradient(left top, #36A2FF, #36A2FF, #FF4836, #FF4836 );
-
   }
 
   .home {
     text-align: center;
     width: 100%;
     height: 100vh;
+    background: -webkit-linear-gradient(left , #000000, rgba(0, 0, 0, 0.5), rgba(172, 172, 172, 0.5), #ACACAC );
+    text-decoration: none;
   }
 
   .home h1 {
     color: white;
-    padding-top: 300px;
-    font-size: 100px;
+    padding-top: 38vh;
+    font-size: 120px;
+    letter-spacing: 5px;
+    font-family: 'royalcrescent';
+    font-weight: lighter;
+    margin-bottom: 29vh;
+  }
+
+  .home h2 {
+    color: white;
+    padding-top: 30px;
+    font-size: 35px;
+    letter-spacing: 5px;
+    font-family: 'royalcrescent';
+    font-weight: lighter;
+    }
+
+  .home #hoteltulum {
+    text-decoration: none;
+  }
+
+  .home .arrowdown {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid white;
+    margin-left: 48.5%;
+    margin-top: 10px;
   }
 
   .sectionOne {
@@ -30,50 +63,135 @@
     background-color: white;
   }
 
-  .leftButton {
+  .sideButton {
     position: fixed;
     z-index: 10;
     width: 3.5%;
     height: 100vh;
-    background-color: #36A2FF;
+    background-color: #000000;
     cursor: pointer;
     text-decoration: none;
-    padding-top: 25%;
     color: white;
+    white-space:nowrap;
+    font-weight: lighter;
   }
 
-  .leftButton p {
+  .sideButton .arrow {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid white;
+    margin-left: 48.5%;
+    margin-top: 10px;
+  }
+
+
+  #leftSide {
+    background-color: #000000;
+  }
+  #leftSide p {
     transform: rotate(-90deg);
+    margin-top: 49.5vh;
   }
-
-  .leftButton:hover {
-    width: 3.8%;
-    -webkit-transition-duration: 0.3s;
+  #leftSide:hover {
+     box-shadow: 2px 1px 1px #36A2FF;
   }
-
-  .rightButton {
+  #leftArrow {
+    transform: rotate(-90deg);
+    margin: auto;
+    padding-top: 40px;
+    margin-left: 3.7vh;
     position: fixed;
-    z-index: 10;
-    width: 3.5%;
-    height: 100vh;
-    background-color: #FF4836;
-    cursor: pointer;
+  }
+
+  #rightSide {
     margin-left: 96.5%;
-    padding-top: 25%;
-    text-decoration: none;
-    color: white;
+    background-color: #ACACAC;
   }
-
-  .rightButton p {
+  #rightSide p {
     transform: rotate(90deg);
+    margin-top: 44vh;
+  }
+  #rightSide:hover {
+     box-shadow: -2px 1px 1px #FF4836;
+  }
+  #rightArrow {
+    transform: rotate(90deg);
+    margin: auto;
+    padding-top: 40px;
+    margin-left: -6px;
+    position: fixed;
+
   }
 
-  .rightButton:hover {
-    width: 3.8%;
-    margin-left: 96.2%;
-    -webkit-transition-duration: 0.3s;
+
+
+
+
+
+
+
+
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 15;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, .9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    white-space:nowrap;
+}
+
+.overlay a p {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    white-space:nowrap;
+    font-weight: lighter;
+}
+
+.overlay a:hover, .overlay a:focus, .overlay a p:hover {
+    color: #ACACAC;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
-
-
+}
 
 }
