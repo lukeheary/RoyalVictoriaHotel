@@ -30,7 +30,7 @@
     letter-spacing: 5px;
     font-family: 'royalcrescent';
     font-weight: lighter;
-    margin-bottom: 29vh;
+    margin-bottom: 17%;
   }
 
   .home h2 {
@@ -57,7 +57,7 @@
   }
 
   .sectionOne {
-    height: 1200px;
+    height: 1500px;
     width: 93%;
     margin-left: 3.5%;
     background-color: white;
@@ -74,6 +74,8 @@
     color: white;
     white-space:nowrap;
     font-weight: lighter;
+    font-size: 20px;
+    letter-spacing: 2px;
   }
 
   .sideButton .arrow {
@@ -86,7 +88,7 @@
     margin-top: 10px;
   }
 
-
+/** SIDE MENU BARS **/
   #leftSide {
     background-color: #000000;
   }
@@ -111,7 +113,7 @@
   }
   #rightSide p {
     transform: rotate(90deg);
-    margin-top: 44vh;
+    margin-top: 41vh;
   }
   #rightSide:hover {
      box-shadow: -2px 1px 1px #A0A0A0;
@@ -128,11 +130,6 @@
 
 
 
-
-
-
-
-
   .overlay {
     height: 100%;
     width: 0;
@@ -143,38 +140,90 @@
     transition: 0.5s;
 }
 
+  #leftMenu h1 {
+    margin-left: 30%;
+    color: white;
+    font-size: 8vh;
+    position: absolute;
+    margin-top: 36vh;
+    z-index: 10;
+    white-space:nowrap;
+  }
+  #leftMenu h2 {
+    margin-left: 65%;
+    color: white;
+    font-size: 4vh;
+    position: absolute;
+    margin-top: 60vh;
+    z-index: 10;
+    white-space:nowrap;
+  }
+
+  #rightMenu h1 {
+    margin-left: 10%;
+    color: white;
+    font-size: 8vh;
+    position: absolute;
+    margin-top: 36vh;
+    z-index: 10;
+    white-space:nowrap;
+  }
+
+  #rightMenu h2 {
+    margin-left: 46%;
+    color: white;
+    font-size: 4vh;
+    position: absolute;
+    margin-top: 60vh;
+    z-index: 10;
+    white-space:nowrap;
+  }
+
   #leftMenu {
     left: 0;
-    background: -webkit-linear-gradient(left , #000000, rgba(0, 0, 0, 0.7) );
+    background: -webkit-linear-gradient(left , #000000, rgba(0, 0, 0, 0.98) );
     text-align: left;
-    margin-left: 45px;
+    margin-left: 3.5%;
+    cursor: url('https://spicyweb.com.au/assets/template/cursor-close.svg'), auto;
+
   }
 
   #rightMenu {
     right: 0;
-    background: -webkit-linear-gradient(right , #ACACAC, rgba(172, 172, 172, 0.7) );
-    text-align: right;
-    margin-right: 45px;
+    background: -webkit-linear-gradient(right , #ACACAC, rgba(172, 172, 172, 0.98) );
+    text-align: left;
+    margin-right: 3.5%;
+    cursor: url('https://spicyweb.com.au/assets/template/cursor-close.svg'), auto;
+
   }
 
 .overlay-content {
     position: relative;
-    top: 15vh;
+    top: 20%;
     width: 100%;
     margin-top: 30px;
 }
 
 .overlay a {
-    padding: 8px;
+    padding: 10px 100px 10px 100px;
     text-decoration: none;
     font-size: 36px;
     color: white;
     display: block;
     transition: 0.3s;
     white-space:nowrap;
+    width: 10%;
 }
 
-.overlay a p {
+  #leftMenu a {
+    margin-left: 0%;
+  }
+  #rightMenu a {
+    margin-left: 70%;
+  }
+
+  .overlay a p {
+    padding-top: 2px;
     text-decoration: none;
     font-size: 16px;
     color: white;
@@ -182,7 +231,7 @@
     transition: 0.3s;
     white-space:nowrap;
     font-weight: lighter;
-}
+  }
 
 .overlay a:hover, .overlay a:focus, .overlay a p:hover {
     color: #909090;
