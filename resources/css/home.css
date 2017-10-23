@@ -25,12 +25,11 @@
 
   .home h1 {
     color: white;
-    padding-top: 38vh;
+    margin-top: 27vh;
     font-size: 120px;
     letter-spacing: 5px;
     font-family: 'royalcrescent';
     font-weight: lighter;
-    margin-bottom: 17%;
   }
 
   .home h2 {
@@ -53,20 +52,13 @@
     border-right: 15px solid transparent;
     border-top: 15px solid white;
     margin-left: 48.5%;
-    margin-top: 10px;
-  }
-
-  .sectionOne {
-    height: 1500px;
-    width: 93%;
-    margin-left: 3.5%;
-    background-color: white;
+    margin-top: 25px;
   }
 
   .sideButton {
     position: fixed;
     z-index: 10;
-    width: 3.5%;
+    width: 2.5%;
     height: 100vh;
     background-color: #000000;
     cursor: pointer;
@@ -88,58 +80,56 @@
     margin-top: 10px;
   }
 
+  .barContainer {
+    padding-top: 30px;
+    cursor: pointer;
+  }
+  .bar {
+    width: 27px;
+    height: 3px;
+    background-color: white;
+    margin: 8px auto 8px auto;
+    margin-right: 13vh;
+    position: static;
+  }
+  #firstBar {
+    margin-top: 0px;
+  }
+
+
+
 /** SIDE MENU BARS **/
-  #leftSide {
+  #leftButton {
     background-color: #000000;
   }
-  #leftSide p {
+  #leftButton p {
     transform: rotate(-90deg);
     margin-top: 49.5vh;
   }
-  #leftSide:hover {
+  #leftButton:hover {
      box-shadow: 2px 1px 1px #1E1E1E;
   }
-  #leftArrow {
-    transform: rotate(-90deg);
-    margin: auto;
-    padding-top: 40px;
-    margin-left: 3.7vh;
-    position: fixed;
-  }
 
-  #rightSide {
-    margin-left: 96.5%;
+  #rightButton {
+    margin-left: 97.5%;
     background-color: #ACACAC;
   }
-  #rightSide p {
+  #rightButton p {
     transform: rotate(90deg);
     margin-top: 41vh;
   }
-  #rightSide:hover {
+  #rightButton:hover {
      box-shadow: -2px 1px 1px #A0A0A0;
   }
-  #rightArrow {
-    transform: rotate(90deg);
-    margin: auto;
-    padding-top: 40px;
-    margin-left: -6px;
-    position: fixed;
 
+
+/** LEFT MENU **/
+  #leftMenu {
+    left: 0;
+    background: -webkit-linear-gradient(left , #000000, rgba(0, 0, 0, 0.98) );
+    text-align: left;
+    cursor: url('https://spicyweb.com.au/assets/template/cursor-close.svg'), auto;
   }
-
-
-
-
-  .overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 15;
-    top: 0;
-    overflow-x: hidden;
-    transition: 0.5s;
-}
-
   #leftMenu h1 {
     margin-left: 30%;
     color: white;
@@ -158,70 +148,72 @@
     z-index: 10;
     white-space:nowrap;
   }
-
-  #rightMenu h1 {
-    margin-left: 10%;
-    color: white;
-    font-size: 8vh;
-    position: absolute;
-    margin-top: 36vh;
-    z-index: 10;
-    white-space:nowrap;
-  }
-
-  #rightMenu h2 {
-    margin-left: 46%;
-    color: white;
-    font-size: 4vh;
-    position: absolute;
-    margin-top: 60vh;
-    z-index: 10;
-    white-space:nowrap;
-  }
-
-  #leftMenu {
-    left: 0;
-    background: -webkit-linear-gradient(left , #000000, rgba(0, 0, 0, 0.98) );
-    text-align: left;
-    margin-left: 3.5%;
-    cursor: url('https://spicyweb.com.au/assets/template/cursor-close.svg'), auto;
-
-  }
-
-  #rightMenu {
-    right: 0;
-    background: -webkit-linear-gradient(right , #ACACAC, rgba(172, 172, 172, 0.98) );
-    text-align: left;
-    margin-right: 3.5%;
-    cursor: url('https://spicyweb.com.au/assets/template/cursor-close.svg'), auto;
-
-  }
-
-.overlay-content {
-    position: relative;
-    top: 20%;
-    width: 100%;
-    margin-top: 30px;
-}
-
-.overlay a {
-    padding: 10px 100px 10px 100px;
-    text-decoration: none;
-    font-size: 36px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-    white-space:nowrap;
-    width: 10%;
-}
-
   #leftMenu a {
-    margin-left: 0%;
-  }
-  #rightMenu a {
-    margin-left: 70%;
+    margin-left: 8%;
+    width: 10px;
   }
 
+/** RIGHT MENU **/
+  #rightMenu {
+  right: 0;
+  background: -webkit-linear-gradient(right , #ACACAC, rgba(172, 172, 172, 0.98) );
+  text-align: left;
+  cursor: url('https://spicyweb.com.au/assets/template/cursor-close.svg'), auto;
+}
+  #rightMenu h1 {
+  margin-left: 10%;
+  color: white;
+  font-size: 8vh;
+  position: absolute;
+  margin-top: 36vh;
+  z-index: 10;
+  white-space:nowrap;
+}
+  #rightMenu h2 {
+  margin-left: 46%;
+  color: white;
+  font-size: 4vh;
+  position: absolute;
+  margin-top: 60vh;
+  z-index: 10;
+  white-space:nowrap;
+}
+  #rightMenu a {
+  margin-left: 70%;
+  width: 10px;
+}
+
+/** MENU FORMATTING **/
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 15;
+    top: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  .overlay-content {
+      position: relative;
+      width: 100%;
+  }
+  #leftOptions {
+    margin-top: 30vh;
+  }
+  #rightOptions {
+    margin-top: 22vh;
+  }
+
+  .overlay a {
+      padding: 10px 100px 10px 10px;
+      text-decoration: none;
+      font-size: 36px;
+      color: white;
+      display: block;
+      transition: 0.3s;
+      white-space:nowrap;
+      width: 10%;
+  }
   .overlay a p {
     padding-top: 2px;
     text-decoration: none;
@@ -231,26 +223,92 @@
     transition: 0.3s;
     white-space:nowrap;
     font-weight: lighter;
+    margin-left: 30px;
   }
-
-.overlay a:hover, .overlay a:focus, .overlay a p:hover {
+  .overlay a:hover, .overlay a:focus, .overlay a p:hover {
     color: #909090;
 }
-
-.overlay .closebtn #leftMenu {
+  .overlay .closebtn #leftMenu {
     position: absolute;
     top: 30px;
     right: 30px;
     font-size: 30px;
 }
-
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
     font-size: 40px;
     top: 15px;
     right: 35px;
+    }
   }
+
+
+/** BOX **/
+
+  /** BOX PROPERTIES */
+  .boxContainer {
+  display: flex;
+  flex-wrap: wrap;
+  height: 760px;
+  width: 95%;
+  margin-left: 2.5%;
+  background-color: black;
+}
+  .box {
+  width: 50%;
+  background-color: blue;
+  height: 380px;
+  margin: auto;
+  background-size:cover;
+}
+  .box:hover {
+  opacity: .3;
+  transition: .5s;
+}
+
+  /** BOX PICTURES **/
+  .boxContainer #topLeft {
+  background-image: url("http://www.nufolio.com/images/tulum_wip.png");
+}
+  .boxContainer #topRight {
+  background-image: url("../pictures/picture2.jpeg");
+}
+  .boxContainer #bottomLeft {
+  background-image: url("../pictures/picture3.jpeg");
+}
+  .boxContainer #bottomRight {
+  background-image: url("../pictures/picture4.jpeg");
+}
+
+/** PAGE SECTIONS **/
+  .sectionOne {
+    height: 500px;
+    width: 95%;
+    margin-left: 2.5%;
+    background-color: white;
+  }
+
+  #sectionOneAnchor {}
+  .sectionTwo {
+  height: 800px;
+  width: 95%;
+  margin-left: 2.5%;
+  background-color: white;
+}
+  .sectionThree {
+  height: 450px;
+  width: 95%;
+  margin-left: 2.5%;
+  background-color: #3D3D3D;
+}
+  .sectionFour {
+  height: 150px;
+  width: 95%;
+  margin-left: 2.5%;
+  background-color: white;
+}
+
 }
 
 }

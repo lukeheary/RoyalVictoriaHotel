@@ -7,8 +7,10 @@
     <link href="./resources/css/home.css" type="text/css" rel="stylesheet">
   </head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Smooth scrolling script -->
   <script>
-  $(document).ready(function(){
+    $(document).ready(function(){
     // Add smooth scrolling to all links
     $("a").on('click', function(event) {
 
@@ -34,26 +36,26 @@
   });
   </script>
 
+  <!-- Script for opening/closing menus -->
   <script>
     function openLeftMenu() {
-    document.getElementById("leftMenu").style.width = "100%";
-}
+      document.getElementById("leftMenu").style.width = "100%";
+    }
     function closeLeftMenu() {
-    document.getElementById("leftMenu").style.width = "0%";
-}
-
+      document.getElementById("leftMenu").style.width = "0%";
+    }
     function openRightMenu() {
-    document.getElementById("rightMenu").style.width = "100%";
-}
+      document.getElementById("rightMenu").style.width = "100%";
+    }
     function closeRightMenu() {
-    document.getElementById("rightMenu").style.width = "0%";
-}
+      document.getElementById("rightMenu").style.width = "0%";
+    }
   </script>
 
   <style>
-  body {
-    background: url("background.png");
-  }
+    body {
+      background: url("background.png");
+    }
   </style>
 
   <body>
@@ -61,29 +63,22 @@
   <div class="overlay" id="leftMenu" onclick="closeLeftMenu()">
     <h1> <i>"Creativity is contageous, <br> pass it on"</i> </h1>
     <h2> -Albert Einstein </h2>
-    <div class="overlay-content">
-      <a href="#">Hotel</a>
-      <a href="#">Bedrooms</a>
-      <a href="#"><p>Single</p></a>
-      <a href="#"><p>King</p></a>
-      <a href="#"><p>Suite</p></a>
+    <div class="overlay-content" id = "leftOptions">
+      <a href="#">Architecture</a>
+      <a href="#"><p>Architecture</p></a>
+      <a href="#"><p>Architecture</p></a>
+      <a href="#"><p>Architecture</p></a>
 
-
-      <a href="#">Eat & Drink</a>
-      <a href="#"><p>Snack Bar</p></a>
-      <a href="#"><p>Café</p></a>
-
-      <a href="#">Event</a>
-      <a href="#"><p>Private Dining</p></a>
-      <a href="#"><p>Weddings</p></a>
-
+      <a href="#">Art</a>
+      <a href="#">Amenities</a>
+      <a href="#">Reception</a>
     </div>
 
   </div>
   <div class="overlay" id="rightMenu" onclick="closeRightMenu()">
     <h1> <i>"If opportunity doesn't <br> knock, build a door"</i> </h1>
     <h2> -Milton Berle </h2>
-    <div class="overlay-content">
+    <div class="overlay-content" id = "rightOptions">
       <a href="#">CMA</a>
       <a href="#"><p>Location</p></a>
       <a href="#">Corporate Structure</a>
@@ -98,33 +93,53 @@
     </div>
   </div>
 
-  <a class="sideButton" id = "leftSide" onclick="openLeftMenu()">
-    <div class = "arrow" id = "leftArrow">
-    </div>
+  <a class="sideButton" id = "leftButton" onclick="openLeftMenu()">
     <p>the property</p>
   </a>
 
-  <a class="sideButton" id = "rightSide" onclick="openRightMenu()">
-    <div class = "arrow" id = "rightArrow">
-    </div>
+  <a class="sideButton" id = "rightButton" onclick="openRightMenu()">
     <p>the investment</p>
   </a>
 
 
+
   <div class = "home">
+    <div class = "barContainer" onclick="openLeftMenu()">
+      <div class = "bar" id = "firstBar"> </div>
+      <div class = "bar"> </div>
+      <div class = "bar"> </div>
+    </div>
+
     <h1> ROYAL VICTORIA </h1>
 
-    <a href="#hoteltulum" id = "hoteltulum">
+    <a href="#sectionOneAnchor" id = "hoteltulum">
       <h2> Hotel Tulum </h2>
       <div class = "arrowdown">
       </div>
     </a>
     </div>
 
-  <div class = "sectionOne">
-
-
+  <div class = "sectionOne" id = "sectionOneAnchor">
   </div>
+
+  <div class = "boxContainer">
+    <div class = "box" id = "topLeft"> </div>
+    <div class = "box" id = "topRight"> </div>
+    <div class = "box" id = "bottomLeft"> </div>
+    <div class = "box" id = "bottomRight"> </div>
+  </div>
+
+  <div class = "sectionTwo">
+  </div>
+
+  <div class = "sectionThree">
+  </div>
+
+  <div class = "sectionFour">
+  </div>
+
+
+
 
   </body>
 </html>
